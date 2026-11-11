@@ -1,0 +1,101 @@
+第三方开源组件与许可信息
+
+更新日期：2026-06-06
+说明：以下列出本应用直接或间接使用的主要第三方开源组件、版本号及许可协议。完整依赖树可能随版本更新略有变化。
+
+────────────────────────────────
+1. Kotlin
+   组织：JetBrains
+   版本：2.3.10
+   用途：应用开发语言与运行时
+   许可：Apache License 2.0
+   协议地址：https://www.apache.org/licenses/LICENSE-2.0
+
+2. AndroidX Core KTX
+   组织：Google / Android Open Source Project
+   版本：1.15.0
+   用途：Android 核心扩展 API
+   许可：Apache License 2.0
+
+3. AndroidX Activity Compose
+   组织：Google / Android Open Source Project
+   版本：1.9.3
+   用途：Compose Activity 集成
+   许可：Apache License 2.0
+
+4. AndroidX Lifecycle
+   组织：Google / Android Open Source Project
+   版本：2.8.7
+   用途：ViewModel、生命周期感知组件
+   许可：Apache License 2.0
+
+5. Jetpack Compose BOM
+   组织：Google / Android Open Source Project
+   版本：2024.10.01
+   用途：Compose UI、Material3、图标等界面框架
+   许可：Apache License 2.0
+
+6. AndroidX Navigation Compose
+   组织：Google / Android Open Source Project
+   版本：2.8.4
+   用途：应用内页面导航
+   许可：Apache License 2.0
+
+7. Dagger Hilt
+   组织：Google
+   版本：2.59.2
+   用途：依赖注入
+   许可：Apache License 2.0
+
+8. AndroidX Hilt Navigation Compose
+   组织：Google / Android Open Source Project
+   版本：1.2.0
+   用途：Hilt 与 Navigation Compose 集成
+   许可：Apache License 2.0
+
+9. AndroidX Room
+   组织：Google / Android Open Source Project
+   版本：2.7.1
+   用途：本地 SQLite 数据库 ORM
+   许可：Apache License 2.0
+
+10. ComposeCharts
+    组织：Ehsan Narmani
+    版本：0.2.5
+    用途：统计页饼图与柱状图
+    许可：Apache License 2.0
+    项目地址：https://github.com/ehsannarmani/ComposeCharts
+
+11. OkHttp
+    组织：Square
+    版本：4.12.0
+    用途：局域网 HTTP 数据传输客户端
+    许可：Apache License 2.0
+
+12. NanoHTTPD
+    组织：NanoHTTPD Project
+    版本：2.3.1
+    用途：局域网 HTTP 服务（临时组网分享）
+    许可：BSD 3-Clause License
+    协议地址：https://opensource.org/licenses/BSD-3-Clause
+
+13. uCrop
+    组织：Yalantis
+    版本：2.2.8
+    用途：图片裁剪
+    许可：Apache License 2.0
+    项目地址：https://github.com/Yalantis/uCrop
+
+────────────────────────────────
+Apache License 2.0 摘要
+
+您可以在遵守许可条款的前提下免费使用、修改和分发上述组件。许可要求保留版权声明与许可文本，且不对贡献者施加额外限制。完整条款请访问：https://www.apache.org/licenses/LICENSE-2.0
+
+BSD 3-Clause License 摘要
+
+允许在保留版权声明、许可声明及免责声明的前提下进行使用、修改与再分发。完整条款请访问：https://opensource.org/licenses/BSD-3-Clause
+
+────────────────────────────────
+免责声明
+
+本页面所列信息仅供合规披露与透明度说明。若您对某一组件的许可义务有疑问，请查阅该组件官方仓库中的 LICENSE 文件或咨询专业法律意见。

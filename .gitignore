@@ -1,0 +1,24 @@
+# Release signing secrets — never commit
+android/keystore.properties
+android/keystore/*.jks
+android/keystore/*.keystore
+
+# Android build outputs
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+*.apk
+*.aab
+
+# NLU training env / intermediate artifacts (shipped assets stay under android/.../assets/nlu)
+tools/nlu/.venv/
+tools/nlu/artifacts/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+.cursor/

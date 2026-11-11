@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  LAN sharing uses plain HTTP to peers on the local network (e.g. 192.168.x.x).
+  IP hosts are not supported by domain-config; base cleartext is required.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

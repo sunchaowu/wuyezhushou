@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Match ic_launcher_full edge colors so mask crop never shows a mismatched band. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="135"
+        android:endColor="#DBEAFE"
+        android:startColor="#2563EB"
+        android:type="linear" />
+</shape>
