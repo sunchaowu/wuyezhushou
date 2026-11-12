@@ -3,9 +3,9 @@ agp = "9.0.0"
 kotlin = "2.3.10"
 ksp = "2.3.9"
 
-compileSdk = "35"
+compileSdk = "36"
 minSdk = "24"
-targetSdk = "34"
+targetSdk = "36"
 
 composeBom = "2024.10.01"
 activityCompose = "1.9.3"

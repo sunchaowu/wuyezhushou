@@ -161,7 +161,8 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.nanohttpd)
     // On-device Tiny NLU (approved listen-assistant plan M3.5)
-    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.17.3")
+    // 1.23.1+ ships 16 KB-aligned native libs (Google Play 16 KB page-size requirement)
+    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.23.1")
     // Offline streaming ASR (sherpa-onnx Zipformer-zh); models live in assets/asr/
     // Prefer local AAR (scripts/fetch-sherpa-aar.sh) to avoid flaky JitPack transfers.
     val sherpaAar = file("libs/sherpa-onnx-v1.13.5.aar")

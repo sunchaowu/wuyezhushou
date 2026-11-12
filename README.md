@@ -38,8 +38,10 @@
 | 存储 | Room 2.7.1（数据库版本 6，含 `MIGRATION_5_6`） |
 | 图表 | ComposeCharts 0.2.5 |
 | 组网传输 | OkHttp 4.12（局域网客户端）+ NanoHTTPD 2.3.1（局域网服务端）+ 经典蓝牙 |
-| 端侧 AI | ONNX Runtime Android 1.17.3（文本意图 NLU，INT8 ≈ 3.3 MB）；sherpa-onnx 1.13.5（流式 ASR，Zipformer-zh-14M ≈ 31 MB） |
-| SDK | compileSdk 35、targetSdk 34、minSdk 24 |
+| 端侧 AI | ONNX Runtime Android 1.23.1（文本意图 NLU，INT8 ≈ 3.3 MB，16 KB 页对齐）；sherpa-onnx 1.13.5（流式 ASR，Zipformer-zh-14M ≈ 31 MB） |
+| SDK | compileSdk 36、targetSdk 36、minSdk 24 |
+
+> 16 KB 页支持：`arm64-v8a` 原生库（sherpa-onnx 1.13.5、ONNX Runtime 1.23.1）均按 16 KB 对齐，满足 Google Play 自 2025-11-01 起对 targetSdk ≥ 35 应用的 16 KB 页要求。
 
 ---
 
@@ -162,6 +164,7 @@ cp android/keystore.properties.example android/keystore.properties
 
 ### 待办
 
+- [x] targetSdk 36（Android 16）升级 + 16 KB 页对齐（2026-11-12，待真机回归）
 - [ ] 真机安装后**飞行模式口述验收**（收费 / 事件 / 特征标签 / 负例 / 跳转 / 提醒深链）
 - [ ] 组网与点对点分享的真机联调（局域网、蓝牙备用、多机型兼容性）
 - [ ] Release 签名构建与商店发布材料（截图、隐私表单）核对
